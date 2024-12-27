@@ -1,0 +1,76 @@
+Pour déployer votre travail sur GitHub et partager le lien vers votre application déployée, voici les étapes à suivre :
+
+Étape 1 : Créer un dépôt GitHub
+Connectez-vous à votre compte GitHub.
+Créez un nouveau dépôt public :
+Cliquez sur le bouton "New" dans la section "Repositories".
+Donnez un nom à votre dépôt (par exemple, mon-application).
+Assurez-vous que le dépôt est public.
+Cliquez sur Create repository.
+Étape 2 : Ajouter votre projet au dépôt GitHub
+Si vous avez déjà un projet sur votre machine locale, suivez ces étapes pour le pousser sur GitHub :
+
+Ouvrez le terminal (ou la ligne de commande).
+Allez dans le répertoire de votre projet :
+bash
+Copier le code
+cd /chemin/vers/votre/projet
+Initialisez un dépôt Git si ce n'est pas déjà fait :
+bash
+Copier le code
+git init
+Ajoutez tous les fichiers au suivi Git :
+bash
+Copier le code
+git add .
+Effectuez un commit des fichiers :
+bash
+Copier le code
+git commit -m "Initial commit"
+Liez votre dépôt local au dépôt GitHub :
+bash
+Copier le code
+git remote add origin https://github.com/votre-nom-utilisateur/nom-du-depot.git
+Poussez le projet vers GitHub :
+bash
+Copier le code
+git push -u origin master
+Étape 3 : Déployer votre application
+Il existe plusieurs façons de déployer une application web (comme une application Node.js, React, ou Flask). Voici quelques options populaires :
+
+1. Déployer sur GitHub Pages (si c'est une application front-end)
+Si votre application est uniquement front-end (HTML, CSS, JavaScript), vous pouvez utiliser GitHub Pages :
+
+Dans votre dépôt GitHub, allez dans l'onglet Settings.
+Descendez jusqu'à la section GitHub Pages.
+Dans la section Source, sélectionnez la branche main ou gh-pages et cliquez sur Save.
+L'URL de votre application sera affichée dans la section "GitHub Pages". Ce sera quelque chose comme :
+https://votre-nom-utilisateur.github.io/nom-du-depot/.
+2. Déployer sur Vercel (ou Netlify) (pour une application full-stack ou front-end)
+Si vous avez une application qui nécessite un back-end (par exemple, une API avec un front-end), vous pouvez déployer sur Vercel ou Netlify.
+
+Vercel :
+
+Allez sur Vercel et connectez-vous avec votre compte GitHub.
+Cliquez sur New Project et sélectionnez votre dépôt.
+Vercel détectera automatiquement les paramètres de votre projet (par exemple, si c'est une application React ou Node.js).
+Déployez votre application. L'URL de votre application déployée sera générée.
+Netlify :
+
+Allez sur Netlify et connectez-vous avec votre compte GitHub.
+Cliquez sur New Site from Git et sélectionnez votre dépôt.
+Déployez votre application. L'URL sera générée automatiquement.
+Étape 4 : Partager le lien vers votre application déployée
+Une fois votre application déployée sur GitHub Pages, Vercel, ou Netlify, vous pouvez récupérer l'URL de l'application.
+
+Si vous avez utilisé GitHub Pages, le lien sera sous la forme : https://votre-nom-utilisateur.github.io/nom-du-depot/
+
+Si vous avez utilisé Vercel ou Netlify, le lien sera sous un format personnalisé, comme : https://votre-projet.vercel.app ou https://votre-projet.netlify.app.
+
+Enfin, partagez ce lien avec les autres pour qu'ils puissent accéder à votre application !
+
+Résumé :
+Pousser le code sur GitHub (via git push).
+Déployer l'application (via GitHub Pages, Vercel, ou Netlify).
+Partager le lien vers l'application déployée.
+Si vous avez des questions spécifiques sur le déploiement de votre application, n'hésitez pas à me demander !
